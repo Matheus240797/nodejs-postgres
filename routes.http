@@ -1,0 +1,29 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video Matheus",
+    "description": "Este é o Video Matheus",
+    "duration": "2500"
+}
+
+###
+
+GET http://localhost:3333/videos?search=Matheus
+
+###
+
+PUT http://localhost:3333/videos/67be7663-4b45-4a56-9f17-b26f4d0a05c2
+Content-Type: application/json
+
+{
+    "title": "Video Alterado",
+    "description": "Este é o Video Alterado",
+    "duration": "1800"
+}
+
+###
+
+DELETE  http://localhost:3333/videos/0b3d11c5-d66b-4442-b474-1d98ea090935
+
+###
